@@ -8,7 +8,8 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 </head>
 <body>
     <img src="TEST1.jpg" alt="" width="100%" id="testimg">
@@ -19,20 +20,22 @@
     <img src="TEST6.jpg" alt="" width="100%">
     <img src="TEST7.jpg" alt="" width="100%">
     <img src="TEST8.jpg" alt="" width="100%">
-    <script>
-        var i=0,
-            tag = document.createElement('p'),
-            arr = [];
-        for(;i<19000000;){
-            arr.push(i);
-            i++;
-        }
-        tag.appendChild(document.createTextNode(i));
-        document.body.insertBefore(tag,document.getElementById('testimg'));
-    </script>
     <img src="TEST9.jpg" alt="" width="100%">
     <img src="TEST10.jpg" alt="" width="100%">
-
+    <script>
+        function testFnc(){
+            var i=0,
+                tag = document.createElement('p'),
+                arr = [];
+            for(;i<19000000;){
+                arr.push(i);
+                i++;
+            }
+            tag.appendChild(document.createTextNode(i));
+            document.body.insertBefore(tag,document.getElementById('testimg'));
+        };
+        // testFnc();
+    </script>
     <!-- <script src="http://192.168.115.32:8080/target/target-script-min.js#anonymous"></script> -->
 </body>
 </html>
