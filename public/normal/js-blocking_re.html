@@ -8,8 +8,7 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
 </head>
 <body>
     <img src="TEST1.jpg" alt="" width="100%" id="testimg">
@@ -22,6 +21,8 @@
     <img src="TEST8.jpg" alt="" width="100%">
     <img src="TEST9.jpg" alt="" width="100%">
     <img src="TEST10.jpg" alt="" width="100%">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script>
         function testFnc(){
             var i=0,
@@ -35,6 +36,9 @@
             document.body.insertBefore(tag,document.getElementById('testimg'));
         };
         // testFnc();
+        $(function(){
+           testFnc() 
+        })
     </script>
     <!-- <script src="http://192.168.115.32:8080/target/target-script-min.js#anonymous"></script> -->
 </body>
